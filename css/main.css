@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 700;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
+  color: #48556a;
+  line-height: 1.6;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin-inline: 1em;
+}
+
+.desktop {
+  display: none;
+}
+
+.card {
+  margin: 1em 0;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 18px 13px 38px -15px #9eafc2;
+}
+
+.card .img {
+  border-radius: 1em 1em 0 0;
+  overflow: hidden;
+}
+
+.card .img img {
+  height: 16.6em;
+  object-fit: cover;
+}
+
+.card .article {
+  padding: 2.8em;
+  padding-bottom: 0;
+  margin-bottom: 1em;
+}
+
+.card .article h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1.1em;
+}
+
+.card .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.8em;
+  padding-bottom: 3.8em;
+  margin: 0;
+  height: 5.3em;
+  position: relative;
+}
+
+.card .profile .avatar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card .profile .avatar .img-avatar {
+  width: 3.3em;
+  border-radius: 50%;
+}
+
+.card .profile .avatar .popup-m {
+  border-radius: 0 0 1em 1em;
+  background-color: #48556a;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 100%;
+  width: 100%;
+  color: #9eafc2;
+  padding: 1em 2.4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.card .profile .avatar .popup-m-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card .profile .share {
+  background-color: #ecf2f8;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.card .profile .share img {
+  width: 1em;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-inline: 1.5em;
+  }
+  .card {
+    max-width: 60.6em;
+    display: grid;
+    grid-template-columns: 23.6em auto;
+    grid-template-rows: auto auto;
+  }
+  .card .img {
+    grid-row: 1/3;
+    border-radius: 1em 0 0 1em;
+  }
+  .card .img img {
+    height: 100%;
+  }
+  .card .profile {
+    position: relative;
+  }
+  .card .profile .popup {
+    background-color: #48556a;
+    display: flex;
+    gap: 1em;
+    color: #9eafc2;
+    padding: 1em 2.4em;
+    position: absolute;
+    border-radius: 1em;
+    top: -3em;
+    right: 0;
+    transform: translateX(3.2em);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s;
+    box-shadow: 18px 13px 38px -15px #9eafc2;
+  }
+  .card .profile .popup-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .card .profile .avatar .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1444px) {
+  .card .article h2 {
+    font-size: 1.5em;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
